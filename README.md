@@ -1,10 +1,10 @@
-# 🧠📈 Financial Stock Analysis using LlamaIndex & OpenAI
+🧠📈 Financial Stock Analysis using LlamaIndex & OpenAI
 
 This project provides a lightweight AI-powered **financial stock analysis** assistant. It uses **LlamaIndex**, **OpenAI (GPT-3.5-Turbo)**, and **Streamlit** to analyze articles and generate intelligent stock reports.
 
 ---
 
-## 🚀 Features
+🚀 Features
 
 - 📄 Index financial news articles from the `articles/` folder
 - 🔍 Query insights using OpenAI's GPT
@@ -17,7 +17,8 @@ This project provides a lightweight AI-powered **financial stock analysis** assi
 
 ---
 
-## 🗂️ Project Structure
+🗂️ Project Structure
+```plaintext
 Financial-Stock-Analysis/
 │
 ├── articles/                  # Folder for financial news documents (.txt/.pdf/.docx)
@@ -31,6 +32,7 @@ Financial-Stock-Analysis/
 ├── .env                       # Contains OpenAI API key (not pushed to Git)
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Project overview
+```
 
 
 ---
@@ -42,33 +44,39 @@ Financial-Stock-Analysis/
 ```bash
 git clone https://github.com/your-username/financial-stock-analysis.git
 cd financial-stock-analysis
+```
 
 2️⃣ Create and activate a virtual environment
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 3️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 4️⃣ Set your OpenAI API Key
+
 Create a .env file in the root directory:
-
+```bash
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
+```
 5️⃣ Prepare the data
 
 Place your .docx, .pdf, or .txt news articles in the articles/ folder.
 
 6️⃣ Run the indexer
-
+```bash
 python src/02_index_news.py
-
+```
 This will create the vector index and persist it in the storage/ folder.
 
 7️⃣ Launch the Streamlit app
-
+```bash
 streamlit run app.py
-
+```
 
 📋 Usage
 
