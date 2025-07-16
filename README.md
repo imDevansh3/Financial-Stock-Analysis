@@ -23,7 +23,7 @@ Financial-Stock-Analysis/
 │
 ├── articles/                  # Folder for financial news documents (.txt/.pdf/.docx)
 ├── src/
-│   ├── 01_fetch_data.py       # (Optional) Script for fetching articles (if needed)
+│   ├── 01_fetch_data.py       #  Script for fetching articles 
 │   ├── 02_index_news.py       # Index documents using LlamaIndex
 │   └── 03_query_news.py       # Query indexed documents (backend logic)
 │
